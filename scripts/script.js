@@ -9,7 +9,7 @@ async function fetchCards() {
         cards = (await fetch('https://api.magicthegathering.io/v1/cards')
             .then(res => res.json())).cards;
 
-        console.log(cards);
+        /*console.log(cards);*/
     } catch (err) {
         console.log(err);
     }
