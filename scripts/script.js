@@ -52,7 +52,7 @@ document.getElementById("searchButton").onclick = function() {
 
 //Checking if the card search is valid or has content
 function filterCard(card, textContent) {
-  if (card.name.includes(textContent)) {
+  if (card.name.toLowerCase().includes(textContent)) {
     return true;
   } else {
     return false;
@@ -62,7 +62,7 @@ function filterCard(card, textContent) {
 //Search button function
 async function onClickFunction() {
   let textContent = document.getElementById("search").value;
-
+  textContent = textContent.toLowerCase();
   console.log(textContent);
 
   document.getElementById("cards").innerHTML = "";
