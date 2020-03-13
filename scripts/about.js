@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function replaceMagicWithSomething
 document.getElementById('moreInfoTrigger').addEventListener("click", toggleDiv);
 
 function toggleDiv() {
-  let y = document.getElementById("moreInfoContent");
-  if (y.style.display === "none") {
-    y.style.display = "block";
+  let toggleDropDownBox = document.getElementById("moreInfoContent");
+  if (toggleDropDownBox.style.display === "none") {
+    toggleDropDownBox.style.display = "block";
   } else {
-    y.style.display = "none";
+    toggleDropDownBox.style.display = "none";
   }
 };
