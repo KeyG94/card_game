@@ -5,11 +5,10 @@
 async function fetchCards() {
   let cards = [];
   try {
-    cards = (
-      await fetch("https://api.magicthegathering.io/v1/cards"))
-      const data = await cards.json()
+    cards = await fetch("https://api.magicthegathering.io/v1/cards");
+    const data = await cards.json();
 
-    return data.cards
+    return data.cards;
   } catch (err) {
     console.log(err);
   }
